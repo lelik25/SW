@@ -1,14 +1,13 @@
 ﻿#include <math.h>
 #include <iostream>
 using namespace std;
-
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int f;
+	int denNedeli;
 	cout << " Введите число f=";
-	cin >> f;
-	switch (f)
+	cin >> denNedeli;
+	switch (denNedeli)
 	{
 	case 1: cout << "Понедельник" << endl; break;
 	case 2: cout << "Вторник" << endl; break;
@@ -22,4 +21,3 @@ int main()
 	}
 	return 0;
 }
-
