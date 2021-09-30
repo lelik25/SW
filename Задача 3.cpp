@@ -3,14 +3,16 @@
 using namespace std;
 int main()
 {
-	int n, k, i = 0;
 	cout << "Vvedite n=";
-	cin >> n;
+	int pirvoeChislo;
+	cin >> pirvoeChislo;
 	cout << "Vvedite k=";
-	cin >> k;
-	if (n > k)
+	int vtoroeChislo;
+	cin >> vtoroeChislo;
+	int i = 0;
+	if (pirvoeChislo > vtoroeChislo)
 	{
-		i = n;
+		i = pirvoeChislo;
 		for (int h = 0;; h++)
 		{
 			if (i == 0)
@@ -19,11 +21,11 @@ int main()
 			}
 			i /= 10;
 		}
-		for (int h = 0; h < i - k; h++)
-			n/= 10;
+		for (int h = 0; h < i - vtoroeChislo; h++)
+			pirvoeChislo /= 10;
 	}
 	else cout << "Error";
-		cout<< n;
+		cout<< pirvoeChislo;
 		_getch();
 		return 0;
 }
