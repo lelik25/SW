@@ -15,18 +15,12 @@ int main()
 		{
 			if (i == 0)
 			{
-				i = h;
-				break;
+				i = h; break;
 			}
 			i /= 10;
-
 		}
 		for (int h = 0; h < i - k; h++)
-
-		{
 			n/= 10;
-
-		}
 	}
 	else cout << "Error";
 		cout<< n;
