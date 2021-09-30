@@ -9,7 +9,6 @@ int main()
 {
 	srand(time(0));
 	char pass[5];
-	char key[10];
 	for (int i = 0; i < 4; i++)
 		{
 			pass[i] = rand() % (57 - 48 + 1) + 48;
