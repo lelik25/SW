@@ -15,7 +15,7 @@ int main()
 		{
 			if (i == 0)
 			{
-				i = h; break;
+				i = h;break;
 			}
 			i /= 10;
 		}
