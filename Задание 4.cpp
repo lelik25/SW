@@ -1,22 +1,21 @@
 ﻿#include <math.h>
 #include <iostream>
 using namespace std;
-
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	double a, b, c, h, r;
+	double dlinaPar, shirinaPar, vviotaPar, dlinaOtv, vvisotaOtv;
 	cout << "Введите длинну параллелепипеда а=" ;
-	cin >> a;
+	cin >> dlinaPar;
 	cout << "Введите ширину параллелепипеда b=" ;
-	cin >> b;
+	cin >> shirinaPar;
 	cout << "Введите высоту параллелепипеда с=" ;
-	cin >> c;
+	cin >> vviotaPar;
 	cout << "Введите длину отверстия h="  ;
-	cin >> h;
+	cin >> dlinaOtv;
 	cout << "Введите высоту отверстия r=" ;
-	cin >> r;
-	switch ((b <= h) && (c <= r) ? 1 : (a <= h) && (c <= r) ? 2 : (a <= h) && (b <= r) ? 3 : (b <=r) && (a<=h)? 4 : (c<=h)&&(a<=r)? 5:(b<=r)&&(c<=h)?6: -1)
+	cin >> vvisotaOtv;
+	switch ((shirinaPar <= dlinaOtv) && (vviotaPar <= vvisotaOtv) ? 1 : (dlinaPar <= dlinaOtv) && (vviotaPar <= vvisotaOtv) ? 2 : (dlinaPar <= dlinaOtv) && (shirinaPar <= vvisotaOtv) ? 3 : (shirinaPar <= vvisotaOtv) && (dlinaPar <= dlinaOtv)? 4 : (vviotaPar <= dlinaOtv)&&(dlinaPar <= vvisotaOtv)? 5:(shirinaPar <= vvisotaOtv)&&(vviotaPar <= dlinaOtv)?6: -1)
 	{
 	case 1: cout << "Проходит" << endl; break;
 	case 2: cout << "Проходит" << endl; break;
