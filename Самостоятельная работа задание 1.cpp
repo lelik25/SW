@@ -1,15 +1,15 @@
-﻿#include <math.h>
+#include <math.h>
 #include <iostream>
 using namespace std;
 int main()
 {
-    int a, n;
     cout << "Vvedite chislo a=";
-    cin >> a;
-    while (a)
+    int chislo;
+    cin >> chislo;
+    while (chislo)
     {
-        cout << a % 10 << endl;
-        a /= 10;
+        cout << chislo % 10 << endl;
+        chislo /= 10;
     }
     return 0;
 }
